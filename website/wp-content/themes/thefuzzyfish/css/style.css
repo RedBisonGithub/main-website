@@ -321,6 +321,10 @@ button:hover {
     font-family: 'Mulish', sans-serif !important;
 }
 
+.terms-body {
+    line-height: normal;
+}
+
 /* .main-font { font-family: 'Roboto', sans-serif !important; } */
 
 /* heading size */
@@ -24384,12 +24388,20 @@ li a {
 .tabs-icon {
     width: 55px;
     height: 50px;
-    margin:  20px 20px 0px 300px
+    margin:  20px 20px 0px 300px;
+    transition: .2s all ease-in-out;
 }
 
 .p-position {
     position: absolute;
 	bottom: -25px;
+}
+
+.nav-item:hover .tabs-icon {
+    opacity: 0%;
+}
+.nav-item:hover .p-position {
+    opacity: 0%;
 }
 
 .portfolio-tab p {
@@ -24398,6 +24410,15 @@ li a {
     padding: 20px;
     background: var(--text-color-red);
     background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 100%);
+}
+
+#our-port-cont {
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #our-port {
@@ -24418,11 +24439,51 @@ li a {
 
 #net-serv-cont {
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#net-sec-cont {
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#stream-tv-cont {
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#energy-man-cont {
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#phys-sec-cont {
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #senior-tabs .nav-item {
+    transition: .2s all ease-in-out;
     padding: 4px 0;
     margin: 0;
 }
