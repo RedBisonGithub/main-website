@@ -49,6 +49,7 @@ Table of contents
 ====================================== */
 
 html {
+    scroll-behavior: smooth;
     font-size: 14px;
 }
 
@@ -19713,6 +19714,19 @@ aside .instafeed-grid.gutter-double-extra-large {
     text-align: left;
 }
 
+.feature-box-right-icon-right {
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -webkit-box-align: right !important;
+    -ms-flex-align: right !important;
+    align-items: right !important;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-start;
+    text-align: right;
+}
+
 .feature-box-left-icon-middle .feature-box-content {
     overflow: hidden;
     -webkit-box-flex: 1;
@@ -24205,7 +24219,7 @@ li a {
     color: var(--text-color-black);
     align-items: left;
     flex-direction: row;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .senior-living-banner-text h1 {
@@ -24225,7 +24239,7 @@ li a {
     font-size: clamp(20px, 2vw, 5rem);
     color: var(--text-color-red);
     margin-bottom: 0px !important;
-    line-height: min(5vh);
+    line-height: 5rem;
 }
 
 .senior-top-info-container {
@@ -24256,16 +24270,16 @@ li a {
 }
 
 .need-left-text-container {
-    display: flex;
+    display: block;
+    float: left;
     flex-direction: column;
-    width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .need-left-container {
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    align-items: left;
+    justify-content: left;
 }
 
 .need-left-container h4 {
@@ -24351,7 +24365,6 @@ li a {
     color: white;
     margin: 0 auto;
     max-width: 5000px;
-    gap: 150px;
 }
 
 .model-cont {
@@ -24363,16 +24376,16 @@ li a {
 .model-cont .row p {
     font-size: clamp(13px, 1vw, 18px) !important;
     line-height: 40px;
-    width: 550px;
     margin: 0 auto;
 }
 .model-cont .row h5 {
-    margin: 0;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 0;
 }
 
 .model-left-text-container {
     display: flex;
-    flex-direction: column;
     width: 100%;
     margin: auto;
     color: white;
@@ -24413,6 +24426,7 @@ li a {
 }
 
 #our-port-cont {
+    max-height: 296px;
     background-size: cover;
     background-position: center;
     -webkit-background-size: cover;
@@ -24422,15 +24436,10 @@ li a {
 }
 
 #our-port {
-    width: 376px;
-    height: 295px;
     font-size: 3rem;
     line-height: 40px;
     padding: 100px 60px;
-    background-color: gray;
     color: white;
-    background: rgb(0,0,0);
-    background: radial-gradient(farthest-corner at 0px 0px, rgba(100,100,100,1) 0%, rgba(166,166,166,1) 90%);
 }
 
 #energy p {
@@ -24488,8 +24497,46 @@ li a {
     margin: 0;
 }
 
-.red-wifi {
-    padding-bottom: 25px;
+#tabs-p {
+    line-height: 1.5rem;
+}
+
+#senior-tabs-footer {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.178);
+}
+
+#senior-tabs-footer-commstv {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(128, 128, 128, 0.178);
+}
+
+#senior-tabs-title {
+    min-width: 475px;
+}
+
+#healthsecurity span b {
+    font-weight: 700;
+}
+
+.senior-red-icon {
+    margin: 0 auto;
+    display: block;
+    padding-right: 0px;
+    padding-top: 0px;
+    max-width: 30px;
+    float: right;
+    z-index: 10000;
+    filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(70%) contrast(102%);
+}
+
+.senior-red-icon-exp {
+    margin: 0 auto;
+    padding-bottom: 2rem;
     filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(70%) contrast(102%);
 }
 
@@ -24521,6 +24568,23 @@ li a {
 
     .senior-living-banner-subtext p {
         font-size: clamp(17px, 2vw, 25px);
+    }
+
+    .model-cont .row p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .block {
+        height: 100%;
+    }
+
+    .tabs-icon {
+        width: 20px;
+        height: 20px;
+        margin:  0px 0px 0px 300px;
     }
 }
 
