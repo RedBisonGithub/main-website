@@ -34,12 +34,6 @@
                             <span class="top-bar-contact-list">
                                     <div class='horizontal-divider'></div>
                                 </span>
-                            <span class="alt-font top-bar-contact-list d-none d-md-inline-block">
-                                    PROPERTY MANAGER  <a href='https://propertymanager.redbison.us' class='log-in-link alt-font'><b>LOG IN</b></a>
-                                </span>
-                            <span class="top-bar-contact-list">
-                                    <div class='horizontal-divider'></div>
-                                </span>
                             <span class="alt-font top-bar-contact-list d-none d-md-inline-block" style='padding-right: 0px;'>
                                     CUSTOMER SERVICE  <b>(877) 583-0496</b>
                                 </span>
@@ -147,32 +141,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--START OF MAIN SECTION -->
 
     <!-- Banner Section -->
     <div class="main-content" style='width: 100vw; overflow: hidden;'>
         <div class='container-fluid senior-living-banner' style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/Senior Housing Banner.png');">
-            <div class='col-sm-12 col-md-8 alt-font senior-living-banner-text'>
+            <div class='col-sm-12 wow mw-20 animate__fadeInLeft col-md-8 alt-font senior-living-banner-text'>
                 <h1><b>SENIOR COMMUNITIES</b></h1>
                 <h1 class='alt-font senior-living-banner-title1'>Digital Tools & Services<br>
 
@@ -192,16 +166,16 @@
 
 
         <!-- Top Info Section -->
-        <div class='senior-top-info-container'>
+        <div class='senior-top-info-container wow mw-20 animate__fadeIn'>
             <div class='container'>
                 <div class='row'>
-                    <div class='col-12 col-lg-5 need-left-container'>
+                    <div class='col-12 col-lg-5 wow mw-10 animate__fadeIn need-left-container'>
                         <div class='alt-font need-left-text-container'>
                             <h5>Automated Solutions that</h5>
                             <h4><b>Enable Healthy &<br> Secure Environments</b></h4>
                         </div>
                     </div>
-                    <div class='col-12 col-lg-5 need-right-container'>
+                    <div class='col-12 col-lg-5 wow mw-10 animate__fadeIn need-right-container'>
                         <p class='alt-font need-body'>Our technology solutions portfolio is designed to <b>enhance the quality of life</b> for your influential population who are powering the growth of senior living communities.</p>
                     </div>
                 </div>
@@ -210,16 +184,15 @@
 
 
         <div class="senior-mid-info-cont">
-            <div class="block">
+            <div class="block wow mw-20 animate__fadeInLeft">
                 <div class="alt-font block-contents">
                     <p id="wht">As your single-source technology partner, Red Bison streamlines your operations with our <b>flexible, digital technology platform and solutions,</b> helping you streamline your operations and reduce costs associated with providing senior living services.</p>
                 </div>
             </div>
-            <div class="block" id="gray">
+            <div class="block wow mw-20 animate__fadeInRight" id="gray">
                 <div class="alt-font block-contents">
                     <p>On average a <b>200 Unit Senior Living Complex</b> can reduce its <b>OPERATIONS & ENERGY COSTS</b></p>
                     <img class="block-40" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\40.png">
-                    <p>by up to <b>40%</b> with a total solution from Red Bison.</p>
                 </div>
             </div>
         </div>
@@ -228,7 +201,7 @@
         <div class='model-cont' style="
             background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/BizModel.png');">
             <div class='container'>
-                <div class='row'>
+                <div class='row wow mw-20 animate__fadeIn'>
                     <div class='col-12 col-lg-5 need-left-container'>
                         <div class='main-font model-left-text-container'>
                             <h5>Our Business Model</h5>
@@ -274,12 +247,14 @@
                                 <a data-toggle="tab" href="#healthsecurity" class="nav-link consulting-strategic-navlink active alt-font">
                                     <div id="net-serv-cont" style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/PhysSec.png');">
                                         <script>
-                                            document.getElementById("net-serv-cont").addEventListener("mouseover", function() {
-                                            document.getElementById("net-serv-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/HealthSecHover.png')";
-                                            }, false);
-                                            document.getElementById("net-serv-cont").addEventListener("mouseout", function() {
-                                            document.getElementById("net-serv-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/PhysSec.png')";
-                                            }, false);
+                                            if (window.innerWidth < 768) {
+                                                document.getElementById("net-serv-cont").addEventListener("mouseover", function() {
+                                                    document.getElementById("net-serv-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/HealthSecHover.png')";
+                                                }, false);
+                                                document.getElementById("net-serv-cont").addEventListener("mouseout", function() {
+                                                    document.getElementById("net-serv-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/PhysSec.png')";
+                                                }, false);
+                                            }
                                         </script>
                                         <img class="tabs-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Finger.png">
                                         <div class="portfolio-tab">
@@ -291,18 +266,20 @@
                                 </a>
                             </li>
 
-                        <!-- NET SEC -->
+                        <!-- COMMS TV -->
 
                             <li class="nav-item">
                                 <a data-toggle="tab" href="#commstv" class="nav-link consulting-strategic-navlink alt-font">
                                     <div id="net-sec-cont" style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/StreamTV.png');">
                                         <script>
-                                            document.getElementById("net-sec-cont").addEventListener("mouseover", function() {
-                                            document.getElementById("net-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ComsTVHover.png')";
-                                            }, false);
-                                            document.getElementById("net-sec-cont").addEventListener("mouseout", function() {
-                                            document.getElementById("net-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/StreamTV.png')";
-                                            }, false);
+                                            if (window.innerWidth < 768) {
+                                                document.getElementById("net-sec-cont").addEventListener("mouseover", function() {
+                                                document.getElementById("net-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ComsTVHover.png')";
+                                                }, false);
+                                                document.getElementById("net-sec-cont").addEventListener("mouseout", function() {
+                                                document.getElementById("net-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/StreamTV.png')";
+                                                }, false);
+                                            }
                                         </script>
                                         <img class="tabs-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\TV.png">
                                         <div class="portfolio-tab">
@@ -314,64 +291,45 @@
                                 </a>
                             </li>
 
-                        <!-- STREAM TV -->
-
-                            <li class="nav-item">
-                                <a data-toggle="tab" href="#managedit" id="streamingtv-navlink" class="nav-link consulting-strategic-navlink alt-font">
-                                    <div id="stream-tv-cont" style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ITSup.png');">
-                                        <script>
-                                            document.getElementById("stream-tv-cont").addEventListener("mouseover", function() {
-                                            document.getElementById("stream-tv-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ITSupHover.png')";
-                                            }, false);
-                                            document.getElementById("stream-tv-cont").addEventListener("mouseout", function() {
-                                            document.getElementById("stream-tv-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ITSup.png')";
-                                            }, false);
-                                        </script>
-                                        <img class="tabs-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\IT.png">
-                                        <div class="portfolio-tab">
-                                            <div class="p-position">
-                                                <p><b>Managed</b> IT</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                        <!-- ENVIRO ENERGY -->
+                        <!-- ENERGY MANAGE -->
 
                             <li class="nav-item">
                                 <a data-toggle="tab" href="#enviroenergymanagement" id="enviroenergymanagement-navlink" class="nav-link consulting-strategic-navlink alt-font">
                                     <div id="energy-man-cont" style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/EnergyMan.png');">
                                         <script>
-                                            document.getElementById("energy-man-cont").addEventListener("mouseover", function() {
-                                            document.getElementById("energy-man-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/EnergyManHover.png')";
-                                            }, false);
-                                            document.getElementById("energy-man-cont").addEventListener("mouseout", function() {
-                                            document.getElementById("energy-man-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/EnergyMan.png')";
-                                            }, false);
+                                            if (window.innerWidth < 768) {
+                                                document.getElementById("energy-man-cont").addEventListener("mouseover", function() {
+                                                    document.getElementById("energy-man-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/EnergyManHover.png')";
+                                                }, false);
+                                                document.getElementById("energy-man-cont").addEventListener("mouseout", function() {
+                                                    document.getElementById("energy-man-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/EnergyMan.png')";
+                                                }, false);
+                                            }
                                         </script>
                                         <img class="tabs-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Light.png">
                                         <div class="portfolio-tab">
-                                            <div class="p-position" id="energy">
-                                                <p><b>Environmental &<br/> Energy</b>  Management</p>
+                                            <div class="p-position">
+                                                <p><b>Energy</b>  Management</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </li>
 
-                        <!-- PHYS SEC -->
+                        <!-- RESIDENT SERV -->
 
                             <li class="nav-item">
                                 <a data-toggle="tab" href="#residentservices" id="physicalsecurity-navlink" class="nav-link consulting-strategic-navlink alt-font">
                                     <div id="phys-sec-cont" style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/NetServ.png');">
                                         <script>
-                                            document.getElementById("phys-sec-cont").addEventListener("mouseover", function() {
-                                            document.getElementById("phys-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ResServHover.png')";
-                                            }, false);
-                                            document.getElementById("phys-sec-cont").addEventListener("mouseout", function() {
-                                            document.getElementById("phys-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/NetServ.png')";
-                                            }, false);
+                                            if (window.innerWidth < 768) {
+                                                document.getElementById("phys-sec-cont").addEventListener("mouseover", function() {
+                                                    document.getElementById("phys-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ResServHover.png')";
+                                                }, false);
+                                                document.getElementById("phys-sec-cont").addEventListener("mouseout", function() {
+                                                    document.getElementById("phys-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/NetServ.png')";
+                                                }, false);
+                                            }
                                         </script>
                                         <img class="tabs-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\WiFi.png">
                                         <div class="portfolio-tab">
@@ -406,6 +364,9 @@
                                     <!-- start feature box item -->
                                     <div class="col-17 margin-1-half-rem-bottom">
                                         <div class="feature-box feature-box-left-icon">
+                                            <div class="senior-red-icon-cont">
+                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Finger.png" alt="" />
+                                            </div>
                                             <div class="feature-box text-left last-paragraph-no-margin">
                                                 <span class="alt-font font-weight-700 d-block text-extra-dark-gray alt-font">Access Control</span>
                                                 <p class="main-font" id="tabs-p">
@@ -416,10 +377,6 @@
                                                 <p class="main-font" id="tabs-p">
                                                     Keyless Door Locks for Individual Units
                                                 </p>
-
-                                            </div>
-                                            <div class="feature-box-content last-paragraph-no-margin">
-                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Finger.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -428,6 +385,9 @@
                                     <!-- start feature box item -->
                                     <div class="col-17 margin-1-half-rem-bottom">
                                         <div class="feature-box feature-box-left-icon">
+                                            <div class="senior-red-icon-cont">
+                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Camera.png" style="transform: scaleX(-1);" alt="" />
+                                            </div>
                                             <div class="feature-box text-left last-paragraph-no-margin">
                                                 <span class="alt-font font-weight-700 d-block text-extra-dark-gray alt-font">Video Surveillance</span>
                                                 <p class="main-font">
@@ -435,9 +395,6 @@
                                                     24x7 Alarm Verification<br/>
                                                     Alarm Response Management<br/>
                                                 </p>
-                                            </div>
-                                            <div class="feature-box-content last-paragraph-no-margin">
-                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Camera.png" style="transform: scaleX(-1);" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -447,6 +404,9 @@
                                     <!-- start feature box item -->
                                     <div class="col-17 margin-1-half-rem-bottom">
                                         <div class="feature-box feature-box-left-icon">
+                                            <div class="senior-red-icon-cont" style="overflow: visible;">
+                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Protect.png" alt="" />
+                                            </div>
                                             <div class="feature-box text-left last-paragraph-no-margin">
                                                 <span class="alt-font font-weight-700 d-block text-extra-dark-gray alt-font">Managed Disinfection</span>
                                                 <p class="main-font" id="tabs-p">Automated Solution for Disinfection<br/> & Verification of Places
@@ -457,9 +417,6 @@
                                                 </p>
                                                 <p class="main-font" id="tabs-p">VeriﬁedSAFE™ Reporting Validation<br/> After Disinfection
                                                 </p>
-                                            </div>
-                                            <div class="feature-box-content last-paragraph-no-margin" style="overflow: visible;">
-                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Protect.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -495,6 +452,9 @@
                                     <!-- start feature box item -->
                                     <div class="col-17 margin-1-half-rem-bottom">
                                         <div class="feature-box feature-box-left-icon">
+                                            <div class="senior-red-icon-cont">
+                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\WiFi.png" alt="" />
+                                            </div>
                                             <div class="feature-box text-left last-paragraph-no-margin">
                                                 <span class="alt-font font-weight-700 d-block text-extra-dark-gray alt-font">Internet</span>
                                                 <p class="main-font" id="tabs-p">
@@ -503,10 +463,6 @@
                                                 <p class="main-font" id="tabs-p">
                                                     <b class="font-weight-900">Private WiFi</b> Property-wide<br/>
                                                 </p>
-
-                                            </div>
-                                            <div class="feature-box-content last-paragraph-no-margin">
-                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\WiFi.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -515,23 +471,42 @@
                                     <!-- start feature box item -->
                                     <div class="col-17 margin-1-half-rem-bottom">
                                         <div class="feature-box feature-box-left-icon">
+                                            <div class="senior-red-icon-cont">
+                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Phone.png" style="transform: scaleX(-1);" alt="" />
+                                            </div>
                                             <div class="feature-box text-left last-paragraph-no-margin">
                                                 <span class="alt-font font-weight-700 d-block text-extra-dark-gray alt-font">In-building <b class="font-weight-400">Wireless Service</b></span>
                                                 <p class="main-font" id="tabs-p">
                                                     In-building wireless coverage with<br/>the wireless carrier(s) inside & out<br/>
                                                 </p>
                                             </div>
-                                            <div class="feature-box-content last-paragraph-no-margin">
-                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Phone.png" style="transform: scaleX(-1);" alt="" />
+                                        </div>
+                                    </div>
+                                    <!-- end feature box item -->
+                                    <hr>
+                                    <!-- start feature box item -->
+                                    <div class="col-17 margin-1-half-rem-bottom">
+                                        <div class="feature-box feature-box-left-icon">
+                                            <div class="senior-red-icon-cont">
+                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\IT.png" style="transform: scaleX(-1);" alt="" />
+                                            </div>
+                                            <div class="feature-box text-left last-paragraph-no-margin">
+                                                <span class="alt-font font-weight-700 d-block text-extra-dark-gray alt-font">Managed IT </b></span>
+                                                <p class="main-font" id="tabs-p">
+                                                    IT-as-a-Service<br/>Desktop-as-a-Service<br/>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- end feature box item -->
                                 </div>
-                                <div class="col-12 col-lg-5 col-md-6 offset-lg-">
+                                <div class="col-12 col-lg-5 col-md-6 offset-lg-1-half">
                                     <!-- start feature box item -->
                                     <div class="col-17 margin-1-half-rem-bottom">
                                         <div class="feature-box feature-box-left-icon">
+                                            <div class="senior-red-icon-cont" style="overflow: visible;">
+                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\TV.png" alt="" />
+                                            </div>
                                             <div class="feature-box text-left last-paragraph-no-margin">
                                                 <span class="alt-font font-weight-700 d-block text-extra-dark-gray alt-font"><b class="font-weight-400">Streaming</b>TV*</span>
                                                 <p class="main-font font-italic" id="tabs-p">For common areas and individual units</p>
@@ -548,39 +523,9 @@
                                                     <b class="font-weight-900">Premier</b> Package 150+ Channels
                                                 </p>
                                             </div>
-                                            <div class="feature-box-content last-paragraph-no-margin" style="overflow: visible;">
-                                                <img class="senior-red-icon" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\TV.png" alt="" />
-                                            </div>
                                         </div>
                                     </div>
                                     <!-- end feature box item -->
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h5 class="d-flex alt-font font-weight-700 text-red margin-1-rem-top margin-0-half-rem-bottom offset-lg-1 unifiedComms-managedServices-titles">Add-on&nbsp<b class="font-weight-400">Services</b></h5>
-                            </div>
-                            <div class="container">
-                                <div class="row d-flex feature-box feature-box-left-icon offset-lg-1">
-                                    <div class="col-12 col-lg-4 col-md-44 margin-1-rem-bottom" style="padding: 0;">
-                                        <span>
-                                            <span class="alt-font font-weight-700 text-black line-height-1-rem">Energy Management & Control</span><br/>
-                                            <p class="main-font" id="tabs-p">
-                                                <span class="font-italic">IT-as-a-Service Intelligent Energy Management Tools that Optimize the Energy Usage of a Property</span><br/>
-                                            </p>
-                                            <p class="main-font" id="tabs-p">
-                                                Reduce Runtime & Expand Equipment Lifespan
-                                            </p>
-                                            <p class="main-font" id="tabs-p">
-                                                Control All Building Systems via a Single Pane of Glass
-                                            </p>
-                                        </span>
-                                    </div>
-                                    <div class="col-12 col-lg-6 col-md-6 offset-lg-1" style="padding: 0;">
-                                        <span>
-                                            <span class="alt-font font-weight-700 text-black">Managed IT</span><br/>
-                                            <p class="main-font" id="tabs-p">IT-as-a-Service<br/><br/> Desktop-as-a-Service</p>
-                                        </span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -589,7 +534,7 @@
 
 
                         <!-- start tab item -->
-                        <div id="managedit" class="tab-pane fade">
+                        <!-- <div id="managedit" class="tab-pane fade">
                             <div class="row align-items-center">
                                 <div class="col-12 col-md-6 text-right md-margin-10px-bottom">
                                     <img src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\ITSupExp.png" alt="" />
@@ -597,7 +542,7 @@
                                 <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
                                     <img class="senior-red-icon-exp" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\TV.png" alt="" />
                                     <h3 class="alt-font font-weight-700 text-red margin-0-half-rem-bottom md-margin-0-rem-bottom unifiedComms-managedServices-titles" style='min-width: 475px;'>Managed<b class="font-weight-400"> IT</b></h3>
-                                    <!-- start feature box item -->
+
                                     <div class="col-12 margin-1-half-rem-bottom">
                                         <div class="feature-box feature-box-left-icon">
                                             <div class="feature-box-content last-paragraph-no-margin">
@@ -606,10 +551,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- end feature box item -->
+
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- end tab item -->
 
 
@@ -619,7 +564,7 @@
                             <div class="row align-items-center">
                                 <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
                                     <img class="senior-red-icon-exp" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\Light.png" alt=""/>
-                                    <h3 class="alt-font font-weight-700 text-red margin-0-half-rem-bottom md-margin-0-rem-bottom unifiedComms-managedServices-titles" style='min-width: 475px;'>Energy<b class="font-weight-400"> & </b>Environmental <b class="font-weight-400">Management</b></h3>
+                                    <h3 class="alt-font font-weight-700 text-red margin-0-half-rem-bottom md-margin-0-rem-bottom unifiedComms-managedServices-titles" style='min-width: 475px;'>Energy<b class="font-weight-400"><br/>Management</b></h3>
                                     <!-- start feature box item -->
                                     <div class="col-12 margin-1-half-rem-bottom">
                                         <div class="feature-box feature-box-left-icon">
@@ -630,6 +575,9 @@
                                                     <li>Environmental Systems Tracking & Monitoring</li>
                                                     <li>Sustainability Reports</li>
                                                     <li>Data Reports (to Support Certiﬁcation Requests)</li>
+                                                    <li>Reduce Runtime & Expand Equipment Lifespan</li>
+                                                    <li>Control All Building Systems via a Single Pane of Glass</li>
+                                                    <li class="font-italic">Intelligent Energy Management Tools that Optimize the Energy Usage of a Property</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -663,7 +611,7 @@
                         <div id="residentservices" class="tab-pane fade">
                             <div class="row align-items-center">
                                 <div class="col-12 col-md-6 text-right md-margin-10px-bottom">
-                                    <img src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\PhysSecExp.png" alt="" />
+                                    <img src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\NetServExp.png" alt="" />
                                 </div>
                                 <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
                                     <img class="senior-red-icon-exp" src="wp-content\themes\thefuzzyfish\Assets\Images\Senior Housing Images\WiFi.png" alt="" />
@@ -703,7 +651,7 @@
                                                 <span class="alt-font font-weight-700 d-block text-extra-dark-gray alt-font">Internet</span>
                                                 <p class="main-font">
                                                     Up to 1Gbps & Private WiFi Property-wide<br/>
-                                                    <b class="font-weight-light text-light-gray"><small>*Service only available with Package 2</small></b>
+                                                    <b class="font-weight-light text-light-gray"><small>*Resident Services Require Purchase of Communications & TV Portfolio</small></b>
                                                 </p>
                                             </div>
                                         </div>

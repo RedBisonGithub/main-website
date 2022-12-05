@@ -24226,7 +24226,6 @@ li a {
     /* background: -webkit-linear-gradient(180deg, red, black) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    /* line-height: 4rem !important; */
     margin: 0 20%;
     font-size: clamp(20px, 3vw, 5rem);
 }
@@ -24236,10 +24235,9 @@ li a {
 }
 
 .senior-living-banner-title1 {
-    font-size: clamp(20px, 2vw, 5rem);
+    font-size: clamp(20px, 2vw, 3rem);
     color: var(--text-color-red);
     margin-bottom: 0px !important;
-    line-height: 5rem;
 }
 
 .senior-top-info-container {
@@ -24285,7 +24283,7 @@ li a {
 .need-left-container h4 {
     color: var(--text-color-white);
     margin-bottom: 0px;
-    font-size: clamp(25px, 3vw, 2.85rem);
+    font-size: clamp(25px, 3vw, 2.6rem);
 }
 
 .need-left-container h5 {
@@ -24341,7 +24339,7 @@ li a {
 }
 
 .block-40 {
-    width: 150px;
+    width: 175px;
     padding: 20px
 }
 
@@ -24437,7 +24435,7 @@ li a {
 
 #our-port {
     font-size: 3rem;
-    line-height: 40px;
+    line-height: 3rem;
     padding: 100px 60px;
     color: white;
 }
@@ -24523,38 +24521,49 @@ li a {
     font-weight: 700;
 }
 
+.senior-red-icon-cont {
+    margin-right: 30px;
+}
+
 .senior-red-icon {
     margin: 0 auto;
     display: block;
     padding-right: 0px;
     padding-top: 0px;
     max-width: 30px;
-    float: right;
-    z-index: 10000;
-    filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(70%) contrast(102%);
+    float: left;
+    filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(60%) contrast(102%);
 }
 
 .senior-red-icon-exp {
     margin: 0 auto;
     padding-bottom: 2rem;
-    filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(70%) contrast(102%);
+    filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(60%) contrast(102%);
+}
+
+@media (max-width: 1405px) {
+    .senior-living-banner-text h1 {
+        line-height: 3rem !important;
+    }
 }
 
 @media (max-width: 768px) {
 
     .senior-living-banner {
-        background-position-x: -500px;
+        background-size: cover;
+        background-position: center;
         padding-top: 30px;
         height: 530px;
     }
 
     .senior-living-subtext-container {
-        margin: 0 3%;
+        margin: 0 2.5%;
         width: 200px;
     }
 
     .senior-living-banner-text h1 {
         margin: 0 3%;
+        line-height: 2.8rem !important;
         font-size: 2.3rem;
     }
 
@@ -24570,21 +24579,54 @@ li a {
         font-size: clamp(17px, 2vw, 25px);
     }
 
+    .model-cont .row {
+        height: 275px;
+    }
+
     .model-cont .row p {
         text-align: center;
+    }
+
+    .nav-item:hover .tabs-icon {
+        opacity: 100%;
+    }
+    .nav-item:hover .p-position {
+        opacity: 100%;
+    }
+
+    .tabs-icon {
+        margin:  20px 20px 0px 85%;
     }
 
 }
 
 @media (max-width: 380px) {
+
+    .need-left-container h4 {
+        font-size: clamp(19px, 3vw, 1rem);
+    }
+
+    .need-left-container h5 {
+        font-size: clamp(21px, 3vw, 1rem);
+    }
+
     .block {
         height: 100%;
     }
 
     .tabs-icon {
-        width: 20px;
-        height: 20px;
-        margin:  0px 0px 0px 300px;
+        width: 35px;
+        height: 30px;
+        margin:  10px 20px 0px 83%;
+    }
+
+    .model-cont .row {
+        height: 400px;
+    }
+
+    #our-port {
+        font-size: 2rem;
+        line-height: 2rem;
     }
 }
 
