@@ -24542,8 +24542,19 @@ li a {
 }
 
 @media (max-width: 1405px) {
+
     .senior-living-banner-text h1 {
         line-height: 3rem !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .senior-living-banner {
+        background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/SeniorHousingImages/1024BG.png');
+        background-size: cover;
+        background-position: right;
+        padding-top: 30px;
+        height: 600px;
     }
 }
 
@@ -24551,9 +24562,9 @@ li a {
 
     .senior-living-banner {
         background-size: cover;
-        background-position: center;
+        background-position: right;
         padding-top: 30px;
-        height: 530px;
+        height: 600px;
     }
 
     .senior-living-subtext-container {

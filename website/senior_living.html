@@ -145,7 +145,18 @@
 
     <!-- Banner Section -->
     <div class="main-content" style='width: 100vw; overflow: hidden;'>
-        <div class='container-fluid senior-living-banner' style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/Senior Housing Banner.png');">
+        <div class='container-fluid senior-living-banner' style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/SeniorHousingImages/1440BG.png');">
+        <style>
+            @media (max-width: 1024px) {
+                .senior-living-banner {
+                    background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/SeniorHousingImages/1024BG.png')
+                }
+            }
+
+            @media (max-width: 768px) {
+
+            }
+        </style>
             <div class='col-sm-12 wow mw-20 animate__fadeInLeft col-md-8 alt-font senior-living-banner-text'>
                 <h1><b>SENIOR COMMUNITIES</b></h1>
                 <h1 class='alt-font senior-living-banner-title1'>Digital Tools & Services<br>
@@ -247,7 +258,9 @@
                                 <a data-toggle="tab" href="#healthsecurity" class="nav-link consulting-strategic-navlink active alt-font">
                                     <div id="net-serv-cont" style="background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/PhysSec.png');">
                                         <script>
-                                            if (window.innerWidth < 768) {
+                                            let width = window.innerWidth;
+
+                                            if (width <= 768) {
                                                 document.getElementById("net-serv-cont").addEventListener("mouseover", function() {
                                                     document.getElementById("net-serv-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/HealthSecHover.png')";
                                                 }, false);
@@ -274,10 +287,10 @@
                                         <script>
                                             if (window.innerWidth < 768) {
                                                 document.getElementById("net-sec-cont").addEventListener("mouseover", function() {
-                                                document.getElementById("net-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ComsTVHover.png')";
+                                                    document.getElementById("net-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/ComsTVHover.png')";
                                                 }, false);
                                                 document.getElementById("net-sec-cont").addEventListener("mouseout", function() {
-                                                document.getElementById("net-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/StreamTV.png')";
+                                                    document.getElementById("net-sec-cont").style.backgroundImage = "url('wp-content/themes/thefuzzyfish/Assets/Images/Senior\ Housing\ Images/StreamTV.png')";
                                                 }, false);
                                             }
                                         </script>
