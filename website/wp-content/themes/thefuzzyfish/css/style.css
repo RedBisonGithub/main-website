@@ -24212,7 +24212,7 @@ li a {
     object-fit: scale-down;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     vertical-align: center;
     height: 600px;
     display: flex;
@@ -24220,13 +24220,14 @@ li a {
     align-items: left;
     flex-direction: row;
     padding-top: 80px;
+    background-image: url('../Assets/Images/SeniorHousingImages/1440BG.png');
 }
 
 .senior-living-banner-text h1 {
     /* background: -webkit-linear-gradient(180deg, red, black) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    margin: 0 20%;
+    margin: 2% 20%;
     font-size: clamp(20px, 3vw, 5rem);
 }
 .senior-living-banner-text h1 b {
@@ -24548,9 +24549,9 @@ li a {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1347px) {
     .senior-living-banner {
-        background-image: url('wp-content/themes/thefuzzyfish/Assets/Images/SeniorHousingImages/1024BG.png');
+        background-image: url('../Assets/Images/SeniorHousingImages/1024BG.png');
         background-size: cover;
         background-position: right;
         padding-top: 30px;
@@ -24558,9 +24559,19 @@ li a {
     }
 }
 
+@media (max-width: 992px) {
+    .nav-item:hover .tabs-icon {
+        opacity: 100%;
+    }
+    .nav-item:hover .p-position {
+        opacity: 100%;
+    }
+}
+
 @media (max-width: 768px) {
 
     .senior-living-banner {
+        background-image: url('../Assets/Images/SeniorHousingImages/768BG.png');
         background-size: cover;
         background-position: right;
         padding-top: 30px;
@@ -24611,6 +24622,20 @@ li a {
 
 }
 
+@media (max-width: 530px) {
+    .senior-living-banner {
+        background-image: url('../Assets/Images/SeniorHousingImages/425BG.png');
+        background-position: left;
+    }
+}
+
+@media (max-width: 400px) {
+    .senior-living-banner {
+        background-image: url('../Assets/Images/SeniorHousingImages/400BG.png');
+        background-position: right;
+    }
+}
+
 @media (max-width: 380px) {
 
     .need-left-container h4 {
@@ -24638,6 +24663,13 @@ li a {
     #our-port {
         font-size: 2rem;
         line-height: 2rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .senior-living-banner {
+        background-image: url('../Assets/Images/SeniorHousingImages/325BG.png');
+        background-position: right;
     }
 }
 
