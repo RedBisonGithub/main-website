@@ -11838,6 +11838,10 @@ button.mfp-close,
     height: 0;
 }
 
+.droparrow {
+    max-width: 18px;
+}
+
 .mCustomScrollbar .mCSB_container {
     padding-right: 20px !important;
     margin-right: 0;
@@ -25143,7 +25147,7 @@ li a {
 }
 
 .multifamily-banner-text h1 {
-    font-size: clamp(30px, 3vw, 5rem);
+    font-size: clamp(30px, 3vw, 7rem);
     line-height: 50px;
 }
 

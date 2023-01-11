@@ -1,0 +1,53 @@
+.multi-info-block-1 {
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) -80%, rgb(77, 0, 0) 100%);
+    align-items: center;
+    justify-content: center;
+    line-height: 2.7rem;
+    font-size: 2.2rem;
+    color: white;
+    padding: 45px;
+    width: 100%;
+    height: 10.1em;
+    margin: 0 auto;
+}
+
+.multi-info-block-2 {
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) -80%, rgb(77, 0, 0) 100%);
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: white;
+    padding: 45px;
+    width: 100%;
+    height: 18em;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.baseline-info {
+    margin-top: 20px;
+}
+
+.feature-box {
+    align-items: start !important;
+}
+
+}
+.senior-red-icon-cont {
+    margin: 0 auto;
+    display: block;
+}
+
+.senior-red-icon {
+    display: block;
+    padding-right: 0px;
+    padding-top: 0px;
+    max-width: 30px;
+    float: left;
+    filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(60%) contrast(102%);
+}

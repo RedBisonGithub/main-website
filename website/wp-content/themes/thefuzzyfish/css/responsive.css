@@ -8582,7 +8582,7 @@
         position: absolute;
         top: 0;
         text-align: center;
-        line-height: 50px;
+        /* line-height: 50px; */
     }
     .nav-item.show>.dropdown-toggle {
         -ms-transform: rotate(-180deg);
