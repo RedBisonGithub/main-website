@@ -13333,7 +13333,7 @@ header .header-cart-icon .cart-count {
     line-height: 20px;
     text-align: center;
     top: 50%;
-    transform: translateY(-50%);
+    transform: rotate(50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -25136,19 +25136,14 @@ li a {
 .multi-family-banner {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position: right;
     height: 600px;
     display: flex;
     align-items: flex-end;
     flex-direction: row;
     color: var(--text-color-white);
     padding-bottom: 4%;
-    padding-left: 9%;
-}
-
-.multifamily-banner-text h1 {
-    font-size: clamp(30px, 3vw, 7rem);
-    line-height: 50px;
+    padding-left: 4%;
 }
 
 .connected-experience-outer-container {

@@ -1,27 +1,56 @@
+@import "style.css";
+
+.multifamily-banner-text hr {
+    width: 600px;
+    border: 2px solid white;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.multi-title {
+    font-size: 8rem;
+    line-height: 7rem;
+    margin-bottom: 0px;
+}
+
+.multi-subtitle {
+    font-size: 2.93rem;
+    line-height: 3rem;
+    margin-bottom: 0px;
+}
+
 .multi-info-block-1 {
     background: rgb(255,0,0);
     background: linear-gradient(90deg, rgba(255,0,0,1) -80%, rgb(77, 0, 0) 100%);
-    align-items: center;
     justify-content: center;
+    align-items: center;
     line-height: 2.7rem;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     color: white;
-    padding: 45px;
+    padding: 2.5rem;
     width: 100%;
     height: 10.1em;
+    margin: 0 auto;
+}
+
+.multi-info-block-1 p {
     margin: 0 auto;
 }
 
 .multi-info-block-2 {
     background: rgb(255,0,0);
     background: linear-gradient(90deg, rgba(255,0,0,1) -80%, rgb(77, 0, 0) 100%);
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-size: 2.2rem;
     color: white;
-    padding: 45px;
+    padding: 2.5rem;
     width: 100%;
     height: 18em;
+    margin: 0 auto;
+}
+
+.multi-info-block-2 p {
     margin: 0 auto;
 }
 
@@ -30,6 +59,10 @@
 }
 
 .baseline-info {
+    margin-top: 20px;
+}
+
+.touchless-icon {
     margin-top: 20px;
 }
 
@@ -50,4 +83,97 @@
     max-width: 30px;
     float: left;
     filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(60%) contrast(102%);
+}
+
+@media (max-width: 1210px) {
+    .multi-info-block-1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1232px) {
+    .multi-title {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+}
+
+@media (max-width: 1085px) {
+    .multi-subtitle {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 988px) {
+    .multi-info-block-1 {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    .multi-info-block-2 {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    .touchless-icon {
+        margin: 20px auto 0px auto;
+        width: 70%;
+    }
+}
+
+@media (max-width: 770px) {
+    .touchless-icon {
+        width: 50%;
+    }
+}
+
+@media (max-width: 780px) {
+    .multifamily-banner-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .multi-info-block-1 p {
+        text-align: center;
+    }
+
+    .multi-info-block-2 p {
+        text-align: center;
+    }
+
+    .multifamily-banner-text hr {
+        width: 60%;
+        border: 2px solid white;
+        background-color: white;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 510px) {
+    .multi-title {
+        font-size: 3rem;
+        line-height: .5rem;
+    }
+    .multi-subtitle {
+        font-size: 2rem;
+        line-height: .5rem;
+    }
+    .commercial-banner-subtext {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .multi-title {
+        font-size: 2rem;
+        line-height: 1rem;
+    }
+    .multi-subtitle {
+        font-size: 1.5rem;
+        line-height: none;
+    }
+    .commercial-banner-subtext {
+        font-size: .7rem;
+        line-height: 1.5rem;
+    }
 }
