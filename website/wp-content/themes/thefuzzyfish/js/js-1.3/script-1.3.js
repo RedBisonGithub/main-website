@@ -213,7 +213,7 @@ $(document).ready(function(){
 		loop: true,
 		nav: true,
 		navText: ["❮","❯"],
-		items : 3,
+		items : 4,
 		responsive:{
 			0:{
 				dots: true,
@@ -225,7 +225,7 @@ $(document).ready(function(){
 				items:2
 			},
 			1024:{
-				items:3
+				items:4
 			}
 		}
 	});
