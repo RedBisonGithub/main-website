@@ -24546,6 +24546,10 @@ li a {
     filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(60%) contrast(102%);
 }
 
+.red-icon {
+    filter: invert(36%) sepia(45%) saturate(3290%) hue-rotate(331deg) brightness(60%) contrast(102%);
+}
+
 @media (max-width: 1405px) {
 
     .senior-living-banner-text h1 {
